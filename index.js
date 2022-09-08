@@ -97,7 +97,7 @@ client.on('interactionCreate', async (interaction) => {
 
     if (interaction.customId === "java") {
 
-        const je_role = process.env.BE
+        const je_role = process.env.JE
         const role_mention = `<@&${je_role}>`;
 
         if (member.roles.resolve(je_role)) {
