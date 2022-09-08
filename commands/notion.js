@@ -4,7 +4,7 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY });
 module.exports = {
   data: {
     name: "notion",
-    description: "Notionのページやデータベース  を検索します。",
+    description: "Notionのページやデータベースを検索します。",
     options: [{
       type: "STRING",
       name: "query",
