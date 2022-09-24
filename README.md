@@ -21,7 +21,7 @@ TICKET='waldo' # Ticket Category ID
 ADMIN='fred' # Admin Channel ID
 ```
 
-### development
+### Development
 
 ```bash
 # install packages
