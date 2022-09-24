@@ -1,6 +1,6 @@
 # discord-bot
 
-フリくらの[Discordサーバー](https://discord.com/invite/UsbHGENsc2)で利用しているBOTです。WikiやWordPressサイトの検索、Notionの連携コマンドなどを搭載しています。
+フリくらの[Discordサーバー](https://discord.com/invite/UsbHGENsc2)で利用しているBOTです。チケット、WikiやWordPressサイトの検索、Notionの連携コマンドなどを搭載しています。
 
 ## Usage
 
