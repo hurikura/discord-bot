@@ -4,7 +4,7 @@ const site = process.env.WIKI_URL;
 module.exports = {
   data: {
     name: "wiki",
-    description: "ふりくらWikiを検索します。",
+    description: "フリくらWiki (wiki.freecraft-web.com) を検索します。",
     options: [{
       type: "STRING",
       name: "keyword",
