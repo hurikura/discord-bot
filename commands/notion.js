@@ -36,15 +36,17 @@ module.exports = {
                     return type === 'title';
                 })
 
-                return titleProperty?.title[0].plain_text || 'Unnamed result';
+                return titleProperty?.title[0].plain_text || 'タイトルなし';
             case 'database':
                 return page.title[0].plain_text
         }
     })();
-
       
+      
+      const emoji = page.icon?.type === "emoji" ? page.icon.emoji : ""
+
       const field = {
-        name: page.icon?.type === "emoji" ? page.icon.emoji : "" + title,
+        name: `${emoji} ${title}`,
         value: url,
       };
       fields.push(field);
