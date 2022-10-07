@@ -44,7 +44,7 @@ module.exports = {
 
       
       const field = {
-        name: page.icon.type === "emoji" ? page.icon.emoji : "" + title,
+        name: page.icon?.type === "emoji" ? page.icon.emoji : "" + title,
         value: url,
       };
       fields.push(field);
