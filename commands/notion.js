@@ -36,9 +36,7 @@ module.exports = {
                     return type === 'title';
                 })
 
-                const title = titleProperty?.title[0].plain_text || 'Unnamed result';
-
-                return title
+                return titleProperty?.title[0].plain_text || 'Unnamed result';
             case 'database':
                 return page.title[0].plain_text
         }
@@ -46,7 +44,7 @@ module.exports = {
 
       
       const field = {
-        name: title,
+        name: page.icon.type === "emoji" ? page.icon.emoji : "" + title,
         value: url,
       };
       fields.push(field);
