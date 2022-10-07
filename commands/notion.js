@@ -26,8 +26,8 @@ module.exports = {
 
     const fields = [];
     response.results.map((page) => {
-
-      const url = page.url;
+     
+      const emoji = page.icon?.type === "emoji" ? page.icon.emoji : ""
      
       const title = (() => {
         switch (page.object) {
@@ -38,16 +38,13 @@ module.exports = {
 
                 return titleProperty?.title[0].plain_text || 'タイトルなし';
             case 'database':
-                return page.title[0].plain_text
+                return page.title[0].plain_text || 'タイトルなし';
         }
     })();
       
-      
-      const emoji = page.icon?.type === "emoji" ? page.icon.emoji : ""
-
       const field = {
         name: `${emoji} ${title}`,
-        value: url,
+        value: page.url,
       };
       fields.push(field);
     });
