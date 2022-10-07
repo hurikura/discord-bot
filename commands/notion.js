@@ -28,10 +28,26 @@ module.exports = {
     response.results.map((page) => {
 
       const url = page.url;
+     
+      const title = (() => {
+        switch (page.object) {
+            case 'page':
+                const titleProperty = Object.entries(page.properties).map(([, value]) => value).find(({ type }) => {
+                    return type === 'title';
+                })
 
+                const title = titleProperty?.title[0].plain_text || 'Unnamed result';
+
+                return title
+            case 'database':
+                return page.title[0].plain_text
+        }
+    })();
+
+      
       const field = {
-        name: `${page.id}`,
-        value: `${url}`,
+        name: title,
+        value: url,
       };
       fields.push(field);
     });
