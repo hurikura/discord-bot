@@ -53,7 +53,7 @@ module.exports = {
       })();
       
       const field = {
-        name: emoji + title,
+        name: emoji + title + status,
         value: page.url,
       };
       fields.push(field);
