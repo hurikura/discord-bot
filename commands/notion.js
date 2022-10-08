@@ -27,7 +27,7 @@ module.exports = {
     const fields = [];
     response.results.map((page) => {
      
-      const emoji = page.icon?.type === "emoji" ? page.icon.emoji : ""
+      const emoji = page.icon?.type === "emoji" ? `${page.icon.emoji} ` : ""
      
       const title = (() => {
         switch (page.object) {
@@ -43,7 +43,7 @@ module.exports = {
     })();
       
       const field = {
-        name: `${emoji} ${title}`,
+        name: emoji + title,
         value: page.url,
       };
       fields.push(field);
