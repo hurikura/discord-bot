@@ -42,6 +42,16 @@ module.exports = {
         }
     })();
       
+      const status = (() => {
+          if (page.parent.type === "database_id" && page.parent.database_id === "92f75630-2223-49e6-8391-3c99d8dada69") {
+              return ` (${page.properties.Status.status.name})`
+          } else if (page.parent.type === "database_id" && page.parent.database_id === "14c06d0d-4723-4891-ab55-6f22f64ad352") {
+                return ` (${page.properties.Status.status.name})`
+          } else {
+                return ""
+          }
+      })();
+      
       const field = {
         name: emoji + title,
         value: page.url,
