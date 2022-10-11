@@ -18,14 +18,14 @@ NOTION_API_KEY='corge' # Notion Integrations Token
 WP_SITE_URL='grault' # WordPress Site URL
 WIKI_URL='garply' # MediaWiki URL
 TICKET='waldo' # Ticket Category ID
-ADMIN='fred' # Admin Channel ID
+ADMIN='fred' # Admin Role ID
 ```
 
 ### Development
 
 ```bash
 # install packages
-$ yarn install
+$ npm install
 # start local server
 $ node index.js
 Logged in as {client.user.tag}!
