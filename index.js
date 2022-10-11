@@ -198,7 +198,7 @@ client.on('interactionCreate', async (interaction) => {
             channels.send({
                 content: `<@${interaction.user.id}>`,
                 embeds: [{
-                    description: `チケットを作成しました。これは管理者ロールが付いたスタッフとあなたのみが閲覧できます。相談内容などを記入してください。チャットが終了したら「閉じる」をクリックしてください。`,
+                    description: `チケットを作成しました。これは管理者ロールが付いたスタッフとあなたのみが閲覧できるチャンネルです。相談内容などを記入してください。チャットが終了したら「閉じる」をクリックしてください。このチャンネルは削除されます。`,
                     color: 5620992,
                 }],
                 components: [new MessageActionRow().addComponents(tic2)]
