@@ -198,7 +198,8 @@ client.on('interactionCreate', async (interaction) => {
             channels.send({
                 content: `<@${interaction.user.id}>`,
                 embeds: [{
-                    description: `チケットを作成しました。これは管理者ロールが付いたスタッフとあなたのみが閲覧できます。相談内容などを記入してください。チャットが終了したら「閉じる」をクリックしてください。`
+                    description: `チケットを作成しました。これは管理者ロールが付いたスタッフとあなたのみが閲覧できます。相談内容などを記入してください。チャットが終了したら「閉じる」をクリックしてください。`,
+                    color: 5620992,
                 }],
                 components: [new MessageActionRow().addComponents(tic2)]
                 //buttonを送信
@@ -225,7 +226,7 @@ client.on('interactionCreate', async (interaction) => {
     } else if (interaction.customId === "no") {
 
         await interaction.reply({
-            content: 'Minecraftの始め方について、参考になるリンクを共有します。\nhttps://variouscolors.net/game/minecraft/reference/contents/',
+            content: 'Minecraftの始め方について、リンクを共有します。\nhttps://variouscolors.net/game/minecraft/reference/contents/',
             ephemeral: true,
         });
     }
