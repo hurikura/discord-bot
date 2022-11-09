@@ -1,5 +1,8 @@
 # discord-bot
 
+[![MIT LICENCE](https://img.shields.io/badge/Licence-MIT-brightgreen)
+[![Discord](https://img.shields.io/discord/972742767224705044?color=%235865F2&label=Discord&logo=discord&logoColor=white)
+
 フリくらの[Discordサーバー](https://discord.com/invite/UsbHGENsc2)で利用しているBOTです。チケット、WikiやWordPressサイトの検索、Notionの連携コマンドなどを搭載しています。
 
 ## Usage
